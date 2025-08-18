@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APKMap</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>APKMap - Millions of Apps in your Pocket</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <form id="post-form">
+            <input type="text" placeholder="App Name" id="post-name">
+            <input type="text" placeholder="Add to a Category" id="post-category">
+            <input type="text" placeholder="Rating" id="post-stars">
+            <input type="text" placeholder="Download Count" id="post-download_count">
+            <input type="text" placeholder="Add the URL of the icon" id="post-cover">
+            <button type="submit" id="submit">Add New App</button>
+        </form>
+    </div>
+    <div>
+        <h1>Apps & Tools</h1>
+        <ul id="app-list"></ul>
+    </div>
+</body>
+</html>
